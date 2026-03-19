@@ -11,3 +11,8 @@ print(zeros)
 ones = np.ones((2, 5))
 print("\nOnes:")
 print(ones)
+
+# Linspace function
+linspace_arr = np.linspace(0, 1, 5) # start, stop, number of elements
+print("\nLinspace:")
+print(linspace_arr)
