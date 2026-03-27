@@ -2,8 +2,6 @@
 
 from QuestionData import data
 
-math = data[:, 1]
+math = data[:, 1] > 90
 print("Students with Math score greater than 90:")
-for i in range(len(math)):
-    if math[i] > 90:
-        print(data[i])
+print(data[math])
