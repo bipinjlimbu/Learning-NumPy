@@ -2,8 +2,6 @@
 
 from QuestionData import data
 
-sub = data[:, 1:]
-print("Students with Math and Science scores at least 80:")
-for i in range(len(sub)):
-    if sub[i][0] >= 80 and sub[i][1] >= 80:
-        print(data[i])
+sub = (data[:, 1] >= 80) & (data[:, 2] >= 80)
+print("Students with Math and Science scores both at least 80:")
+print(data[sub])
