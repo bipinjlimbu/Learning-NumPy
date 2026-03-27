@@ -3,9 +3,5 @@
 from QuestionData import data
 
 count = 0
-age = data[:, 0]
-for i in range(len(age)):
-    if age[i] < 19:
-        count += 1
-        
-print("Number of students under 19:", count)
+age = data[:, 0] < 19
+print("Number of students with age less than 19:", len(data[age]))
