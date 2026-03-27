@@ -1,5 +1,6 @@
 import numpy as np
 
+#[Age, Math, Science]
 data = np.array([
     [18, 85, 78],
     [19, 92, 88],
